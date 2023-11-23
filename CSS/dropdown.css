@@ -329,7 +329,7 @@ nav .content .links {
 /* bmw-logo */
 
 .div-3>div>a>img#bmw-logo {
-  width: 25%;
+  width: 20%;
   margin-top: auto;
   margin-bottom: auto;
   margin-left: auto;
@@ -339,7 +339,7 @@ nav .content .links {
 }
 
 .div-3>div>a>img#bmw-logo:hover {
-  width: 40%;
+  width: 24%;
   /* background-color: green; */
   animation: blur-effect 2s;
 
