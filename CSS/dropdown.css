@@ -305,7 +305,7 @@ nav .content .links {
 /*dodge-logo*/
 
 .div-3>div>a>img#dodge-logo {
-  width: 50%;
+  width:35%;
   margin-top: auto;
   margin-bottom: auto;
   margin-left: auto;
@@ -317,7 +317,7 @@ nav .content .links {
 
 .div-3>div>a>img#dodge-logo:hover
 {
-  width: 75%;
+  width: 45%;
   animation: blur-effect 2s;
 
   
@@ -349,7 +349,7 @@ nav .content .links {
 /* Koenigsegg-logo */
 
 .div-3>div>a>img#koenigsegg-logo {
-  width: 50%;
+  width: 35%;
   margin-top: auto;
   margin-bottom: auto;
   margin-left: auto;
@@ -359,7 +359,7 @@ nav .content .links {
 }
 
 .div-3>div>a>img#koenigsegg-logo:hover {
-  width: 75%;
+  width: 45%;
   /* background-color: green; */
   animation: blur-effect 2s;
 
