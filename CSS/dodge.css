@@ -3,7 +3,10 @@
     padding: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+body{
+    background: #d5def5;
 
+}
 /*dropdown*/
 .wrapper {
     background: #8594e4;
