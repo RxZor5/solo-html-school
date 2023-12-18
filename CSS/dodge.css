@@ -156,6 +156,111 @@ nav .content .links {
     top: 0;
 }
 
+
+
+
+/* Div-1 Bearbeitung */
+
+.div-1 {
+    display: grid;
+    grid-template-columns: 49.3vw 49.5vw;
+    grid-template-rows: 7vh repeat(2, 43vh) 7vh;
+}
+
+/* Div-2 Bearbeitung */
+
+.div-2 {
+    background-color: green;
+
+    grid-area: 1/1/1/3;
+}
+
+/* Div-3 Bearbeitung */
+
+.div-3 {
+    background: black;
+    grid-area: 2/1/5/3;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: repeat(8, auto);
+    column-gap: 10px;
+    row-gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*grid*/
+
+.div-3>div {
+    background-color: rgb(216, 7, 7);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 10px;
+    font-size: 30px;
+    transition: font-size 2s ease-in-out;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 15px;
+
+}
+
+
+.div-3>#footer {
+    background-color: darkred;
+    grid-area: 8/1/8/3;
+
+}
+
+
+
+
+p {
+    font-size: 15px;
+    padding: 4px;
+}
+
+li{
+    font-size: 15px;
+    padding: 4px;
+    text-align: start;
+}
+
+/* Blur und Saturations Animation erstellt */
+
+@keyframes blur-effect {
+    0% {
+        filter: blur(0);
+        filter: saturate(1);
+    }
+
+    25% {
+        filter: blur(4px);
+        filter: saturate(10);
+
+    }
+
+    50% {
+        filter: blur(5px);
+        filter: saturate(15);
+
+    }
+
+    75% {
+        filter: blur(4px);
+        filter: saturate(10);
+
+    }
+
+    100% {
+        filter: blur(0);
+        filter: saturate(1);
+
+    }
+
+
+}
+
 /* Responsive code start */
 @media screen and (max-width: 1250px) {
     .wrapper nav {
@@ -289,105 +394,3 @@ nav .content .links {
 
 
 
-
-/*grid*/
-
-.div-3>div {
-    background-color: rgb(216, 7, 7);
-    /* opacity: 0.8; */
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-right: 10px;
-    font-size: 30px;
-    transition: font-size 2s ease-in-out;
-    border-radius: 5px;
-    margin-left: 5px;
-    margin-right: 15px;
-
-}
-
-.div-1 {
-    display: grid;
-    grid-template-columns: 49.3vw 49.5vw;
-    grid-template-rows: 7vh repeat(2, 43vh) 7vh;
-}
-
-.div-2 {
-    background-color: green;
-
-    grid-area: 1/1/1/3;
-}
-
-.div-3 {
-    background: black;
-    /* background-size: cover; */
-
-
-    grid-area: 2/1/5/3;
-
-    display: grid;
-    grid-template-columns: 75% 25%;
-    grid-template-rows: repeat(8, auto);
-    column-gap: 10px;
-    row-gap: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-
-
-
-.div-3>#footer {
-    background-color: darkred;
-    grid-area: 8/1/8/3;
-
-}
-
-
-
-
-p {
-    font-size: 15px;
-    padding: 4px;
-}
-
-li{
-    font-size: 15px;
-    padding: 4px;
-    text-align: start;
-}
-
-
-@keyframes blur-effect {
-    0% {
-        filter: blur(0);
-        filter: saturate(1);
-    }
-
-    25% {
-        filter: blur(4px);
-        filter: saturate(10);
-
-    }
-
-    50% {
-        filter: blur(5px);
-        filter: saturate(15);
-
-    }
-
-    75% {
-        filter: blur(4px);
-        filter: saturate(10);
-
-    }
-
-    100% {
-        filter: blur(0);
-        filter: saturate(1);
-
-    }
-
-
-}

@@ -153,6 +153,209 @@ nav .content .links {
   top: 0;
 }
 
+
+
+
+
+
+
+.div-1 {
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  grid-template-rows: 7vh repeat(2, 43vh) 7vh;
+}
+
+.div-2 {
+  background-color: green;
+
+  grid-area: 1/1/1/3;
+}
+
+/* Div-3 Bearbeitung */
+
+
+.div-3 {
+  background: #d5def5;
+  background-size: cover;
+
+
+  grid-area: 2/1/4/3;
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  column-gap: 10px;
+  row-gap: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/*grid*/
+
+.div-3>div {
+  background-color: lightblue;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-right: 10px;
+  font-size: 30px;
+  transition: font-size 2s ease-in-out;
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-right: 15px;
+}
+
+/*dodge-logo*/
+
+.div-3>div>a>img#dodge-logo {
+  width:35%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transition: width 3s ease-in-out;
+}
+
+
+.div-3>div>a>img#dodge-logo:hover
+{
+  width: 45%;
+  animation: blur-effect 2s;
+
+  
+
+}
+
+
+
+/* bmw-logo */
+
+.div-3>div>a>img#bmw-logo {
+  width: 20%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transition: width 3s ease-in-out;
+}
+
+.div-3>div>a>img#bmw-logo:hover {
+  width: 24%;
+  /* background-color: green; */
+  animation: blur-effect 2s;
+
+}
+
+
+/* Koenigsegg-logo */
+
+.div-3>div>a>img#koenigsegg-logo {
+  width: 35%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transition: width 3s ease-in-out;
+}
+
+.div-3>div>a>img#koenigsegg-logo:hover {
+  width: 45%;
+  /* background-color: green; */
+  animation: blur-effect 2s;
+
+}
+
+/* mclaren logo */
+
+.div-3>div>a>img#McLaren-logo {
+  width: 75%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transition: width 3s ease-in-out;
+}
+
+.div-3>div>a>img#McLaren-logo:hover {
+  width: 100%;
+  /* background-color: green; */
+  animation: blur-effect 2s;
+}
+
+
+/* Logos */
+
+.dodge-logo-div {
+
+
+  grid-area: 4/1/4/3;
+}
+
+.McLaren-logo-div {
+  background-color: yellow;
+
+  grid-area: 1/1/1/1;
+}
+
+.koenigsegg-logo-div {
+  background-color: brown;
+
+  grid-area: 1/2/1/2;
+
+}
+
+.bmw-logo-div {
+  background-color: purple;
+
+  grid-area: 2/2/2/2;
+}
+
+#footer{
+  background-color: #430f58;
+  grid-area: 4/1/4/3;
+
+}
+
+
+/* Blur und Saturations Animation erstellt */
+
+
+@keyframes blur-effect {
+  0% {
+    filter: blur(0);
+    filter: saturate(1);
+  }
+
+  25% {
+    filter: blur(4px);
+    filter: saturate(10);
+
+  }
+
+  50% {
+    filter: blur(5px);
+    filter: saturate(15);
+
+  }
+
+  75% {
+    filter: blur(4px);
+    filter: saturate(10);
+
+  }
+
+  100% {
+    filter: blur(0);
+    filter: saturate(1);
+
+  }
+
+
+}
+
 /* Responsive code start */
 @media screen and (max-width: 1250px) {
   .wrapper nav {
@@ -281,200 +484,5 @@ nav .content .links {
   .content .logo a {
     font-size: 27px;
   }
-
-}
-
-
-
-
-/*grid*/
-
-.div-3>div {
-  background-color: lightblue;
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-right: 10px;
-  font-size: 30px;
-  transition: font-size 2s ease-in-out;
-  border-radius: 5px;
-  margin-left: 5px;
-  margin-right: 15px;
-}
-
-/*dodge-logo*/
-
-.div-3>div>a>img#dodge-logo {
-  width:35%;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  transition: width 3s ease-in-out;
-}
-
-
-.div-3>div>a>img#dodge-logo:hover
-{
-  width: 45%;
-  animation: blur-effect 2s;
-
-  
-
-}
-
-
-
-/* bmw-logo */
-
-.div-3>div>a>img#bmw-logo {
-  width: 20%;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  transition: width 3s ease-in-out;
-}
-
-.div-3>div>a>img#bmw-logo:hover {
-  width: 24%;
-  /* background-color: green; */
-  animation: blur-effect 2s;
-
-}
-
-
-/* Koenigsegg-logo */
-
-.div-3>div>a>img#koenigsegg-logo {
-  width: 35%;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  transition: width 3s ease-in-out;
-}
-
-.div-3>div>a>img#koenigsegg-logo:hover {
-  width: 45%;
-  /* background-color: green; */
-  animation: blur-effect 2s;
-
-}
-
-/* mclaren logo */
-
-.div-3>div>a>img#McLaren-logo {
-  width: 75%;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  transition: width 3s ease-in-out;
-}
-
-.div-3>div>a>img#McLaren-logo:hover {
-  width: 100%;
-  /* background-color: green; */
-  animation: blur-effect 2s;
-}
-
-
-.div-1 {
-  display: grid;
-  grid-template-columns: 50vw 50vw;
-  grid-template-rows: 7vh repeat(2, 43vh) 7vh;
-}
-
-.div-2 {
-  background-color: green;
-
-  grid-area: 1/1/1/3;
-}
-
-.div-3 {
-  background: #d5def5;
-  background-size: cover;
-
-
-  grid-area: 2/1/4/3;
-
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
-  column-gap: 10px;
-  row-gap: 10px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.dodge-logo-div {
-  /* background-color: red; */
-
-  grid-area: 4/1/4/3;
-}
-
-.McLaren-logo-div {
-  background-color: yellow;
-
-  grid-area: 1/1/1/1;
-}
-
-.koenigsegg-logo-div {
-  background-color: brown;
-
-  grid-area: 1/2/1/2;
-
-}
-
-.bmw-logo-div {
-  background-color: purple;
-
-  grid-area: 2/2/2/2;
-}
-
-#footer{
-  background-color: #430f58;
-  grid-area: 4/1/4/3;
-
-}
-
-
-
-
-@keyframes blur-effect {
-  0% {
-    filter: blur(0);
-    filter: saturate(1);
-  }
-
-  25% {
-    filter: blur(4px);
-    filter: saturate(10);
-
-  }
-
-  50% {
-    filter: blur(5px);
-    filter: saturate(15);
-
-  }
-
-  75% {
-    filter: blur(4px);
-    filter: saturate(10);
-
-  }
-
-  100% {
-    filter: blur(0);
-    filter: saturate(1);
-
-  }
-
 
 }

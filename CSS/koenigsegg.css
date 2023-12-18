@@ -7,7 +7,7 @@ body{
     background: black;
 
 }
-/*dropdown*/
+/*dropdown Menü*/
 .wrapper {
     background: rgb(55, 55, 55);
     position: relative;
@@ -177,6 +177,7 @@ nav .content .links {
 /* Div-3 Bearbeitung */
 
 
+
 .div-3 {
     background: black;
     grid-area: 2/1/5/3;
@@ -189,12 +190,10 @@ nav .content .links {
     padding-bottom: 20px;
 }
 
-
-/*grid*/
+/*Unteres Grid erstellen*/
 
 .div-3>div {
-    background-color: rgb(255, 145, 1);
-    /* opacity: 0.8; */
+    background-color: rgb(180, 153, 4);
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -209,7 +208,7 @@ nav .content .links {
 
 
 .div-3>#footer {
-    background-color: orangered;
+    background-color: orange;
     grid-area: 8/1/8/3;
 
 }
@@ -228,7 +227,8 @@ li{
     text-align: start;
 }
 
-/* Animation erstellt */
+/* Blur und Saturations Animation erstellt */
+
 @keyframes blur-effect {
     0% {
         filter: blur(0);
@@ -261,6 +261,8 @@ li{
 
 
 }
+
+
 
 /* Responsive code start */
 @media screen and (max-width: 1250px) {
@@ -298,7 +300,7 @@ li{
     nav .content .links {
         display: block;
         position: fixed;
-        background: orange;
+        background: gold;
         height: 100%;
         width: 100%;
         top: 70px;
@@ -392,6 +394,7 @@ li{
     }
 
 }
+
 
 
 

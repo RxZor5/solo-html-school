@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana;
+}
+
+/* Hintergrundbild */
+
+body{
+    background-image: url(../pics/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Grid Ertellung */
+
+.parent{
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    grid-template-rows: repeat(10, auto);
+    gap: 5%;
+}
+
+/* Überschrift und link farbe auf rot */
+
+h1{
+    color: red;
+}
+
+a{
+    color: red;
+}
