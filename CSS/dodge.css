@@ -3,10 +3,12 @@
     padding: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-body{
+
+body {
     background: black;
 
 }
+
 /*dropdown*/
 .wrapper {
     background: rgb(55, 55, 55);
@@ -212,6 +214,11 @@ nav .content .links {
 
 }
 
+#footer>a {
+    color: white;
+    text-decoration: none;
+}
+
 
 
 
@@ -220,7 +227,7 @@ p {
     padding: 4px;
 }
 
-li{
+li {
     font-size: 15px;
     padding: 4px;
     text-align: start;
@@ -391,6 +398,3 @@ li{
     }
 
 }
-
-
-
